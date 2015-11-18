@@ -39,7 +39,7 @@ public class input
 			    WebSpider a = new WebSpider();
 			    try {
 			    	
-			    	inputbig.lb.setText(a.art(url, location, table));
+			    	inputbig.lb.setText(a.art(url,table));
 			    	
 				} catch (UnsupportedEncodingException e1) {
 					// TODO Auto-generated catch block

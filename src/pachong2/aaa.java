@@ -10,9 +10,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class aaa {
-	    /**
-	     * 获取博客上的文章标题和链接
-	     */
+	   
 	    public String article(String url,String location,String table,String festival) {
 	    	String result = "\n";
 	        Document doc;

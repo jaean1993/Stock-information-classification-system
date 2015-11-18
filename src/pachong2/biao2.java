@@ -4,6 +4,13 @@ public class biao2 {
 
 	String zi;
 	String fu;
+	String id;
+	public String getid() {
+		return id;
+	}
+	public void setid(String id) {
+		this.id = id;
+	}
 	public String getzi() {
 		return zi;
 	}

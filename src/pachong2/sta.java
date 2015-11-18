@@ -21,14 +21,13 @@ public int selectClass(String sql,biao bi,biao2 ci,int cat) {
 		
 		st=con.createStatement();
 		String sqlmethod=sql.substring(0, 6);
-		System.out.println(sqlmethod);
+		
 		if(sqlmethod.equals("insert")||sqlmethod.equals("update")){
 			st.executeUpdate(sql);
 		}else{
+		sql="select * from connection";
 		ResultSet  rs = st.executeQuery(sql);		
 		
-		
-		if(rs.next()==true){
 		if(cat==0){//cat=0时，查询复杂的表
 			
 			while(rs.next()){
@@ -61,33 +60,34 @@ public int selectClass(String sql,biao bi,biao2 ci,int cat) {
 				bi.setLl(ill);
 				String imm=rs.getString("mm");
 				bi.setMm(imm);
-				/*bi.setAa(rs.getString("aa"));
-				bi.setBb(rs.getString("bb"));
-				bi.setCc(rs.getString("cc"));
-				bi.setDd(rs.getString("dd"));
-				bi.setEe(rs.getString("ee"));
-				bi.setFf(rs.getString("ff"));
-				bi.setGg(rs.getString("gg"));
-				bi.setHh(rs.getString("hh"));
-				bi.setIi(rs.getString("ii"));
-				bi.setJj(rs.getString("jj"));
-				bi.setKk(rs.getString("kk"));
-				bi.setLl(rs.getString("ll"));
-				bi.setMm(rs.getString("mm"));*/
+				
 			}
 		}
-		if(cat==1){
+		else if(cat==1){
 			while(rs.next()){
 				String izi=rs.getString("zi");
 				ci.setzi(izi);
 				String ifu=rs.getString("fu");
 				ci.setfu(ifu);
+				String id=rs.getString("id");
+				ci.setid(id);
 			}
-				//ci.setzi(rs.getString("zi"));
-				//ci.setfu(rs.getString("fu"));
+				
+		}
+		else if(cat==2){
+			while(rs.next()){
+				String id=rs.getString("id");
+				ci.setid(id);
+			}
+		}
+		//返回1代表进行了query
+		int b=0;
+		while(rs.next()){
+			System.out.println(rs.getString(b));
+			b++;
 		}
 		i=1;
-		}}
+		}
 		st.close();
 		con.close(); 
 		return i;

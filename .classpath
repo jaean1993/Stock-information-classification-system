@@ -2,7 +2,17 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
-	<classpathentry kind="lib" path="E:/计算机/jsoup-1.7.2.jar"/>
 	<classpathentry kind="lib" path="F:/TDDOWNLOAD/mysql-connector-java(jb51.net)/mysql-connector-java-5.1.7-bin.jar"/>
+	<classpathentry kind="lib" path="E:/cs/jsoup-1.7.2.jar"/>
+	<classpathentry kind="lib" path="E:/cs/httpunit.jar"/>
+	<classpathentry kind="lib" path="E:/cs/activation-1.1.jar"/>
+	<classpathentry kind="lib" path="E:/cs/js-1.6R5.jar"/>
+	<classpathentry kind="lib" path="E:/cs/jtidy-4aug2000r7-dev.jar"/>
+	<classpathentry kind="lib" path="E:/cs/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="E:/cs/nekohtml-0.9.5.jar"/>
+	<classpathentry kind="lib" path="E:/cs/net.sf.jadclipse_3.3.0.jar"/>
+	<classpathentry kind="lib" path="E:/cs/servlet-api-2.4.jar"/>
+	<classpathentry kind="lib" path="E:/cs/xercesImpl-2.6.1.jar"/>
+	<classpathentry kind="lib" path="E:/cs/xmlParserAPIs-2.6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
